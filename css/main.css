@@ -3,6 +3,7 @@
 :root {
     --main-color: #f4cb1e;
     --trans-dur: 0.3s;
+    --Section-padding: 100px;
 }
 
 /* End Variables */
@@ -364,3 +365,98 @@ div.menu span {
 }
 
 /* End Three Boxes */
+
+/* Start Hottest */
+
+.hottest {
+    padding-top: var(--Section-padding, 100px);
+    padding-bottom: var(--Section-padding, 100px);
+}
+
+.hottest .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+    .hottest .container {
+        flex-direction: column;
+    }
+}
+
+.hottest .container .head {
+    width: 40%;
+}
+
+@media (max-width: 768px) {
+    .hottest .container .head {
+        width: 80%;
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hottest .container .head {
+        width: 100%;
+    }
+}
+
+.hottest .container .head h2 {
+    font-size: 50px;
+    line-height: 2;
+}
+
+@media (max-width: 991px) {
+    .hottest .container .head h2 {
+        font-size: 33px;
+    }
+}
+
+.hottest .container div:last-of-type {
+    width: 55%;
+    padding: 60px 40px;
+    background-color: var(--main-color, #f4cb1e);
+    position: relative;
+}
+
+@media (max-width: 768px) {
+    .hottest .container div:last-of-type {
+        width: 80%;
+    }
+}
+
+@media (max-width: 576px) {
+    .hottest .container div:last-of-type {
+        width: 100%;
+    }
+}
+
+.hottest .container div:last-of-type::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: -80px;
+    border-width: 40px;
+    border-style: solid;
+    border-color: transparent var(--main-color, #f4cb1e) transparent transparent;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -moz-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+    .hottest .container div:last-of-type::before {
+        display: none;
+    }
+}
+
+.hottest .container div:last-of-type p {
+    font-size: 17px;
+    color: white;
+    line-height: 1.7;
+}
+
+/* End Hottest */
