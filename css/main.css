@@ -321,3 +321,46 @@ div.menu span {
 }
 
 /* End Landing */
+
+/* Start Three Boxes */
+
+.three-boxes {
+    margin-top: -100px;
+}
+
+.three-boxes .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+    .three-boxes .container {
+        justify-content: center;
+    }
+}
+
+.three-boxes .container .box {
+    flex-basis: calc((100% / 3) - 30px);
+    box-shadow: 0 0 95px rgb(13 3 3 / 56%);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    z-index: 2;
+}
+
+@media (max-width: 768px) {
+    .three-boxes .container .box {
+        flex-basis: 80%;
+        margin-bottom: 50px;
+    }
+}
+
+.three-boxes .container .box img {
+    width: 100%;
+}
+
+/* End Three Boxes */
