@@ -734,6 +734,10 @@ div.menu span {
     padding-bottom: var(--Section-padding, 100px);
 }
 
+.about.sub-page {
+    padding-top: var(--Section-padding, 100px);
+}
+
 .about .container h2 {
     font-size: 50px;
     text-align: center;
@@ -985,6 +989,7 @@ div.menu span {
 footer {
     background-color: #212121;
     color: white;
+    padding-top: 50px;
 }
 
 footer .container .links {
@@ -1015,7 +1020,7 @@ footer .container .links .list:first-of-type {
     align-self: center;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 576px) and (max-width: 768px) {
     footer .container .links .list:first-of-type ul {
         display: flex;
     }
